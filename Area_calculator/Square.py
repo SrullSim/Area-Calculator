@@ -2,7 +2,7 @@ from  Calculator import Shape
 
 class Squere(Shape):
 
-    def __init__(self, length: float, width: float):
+    def __init__(self, length: float|int, width: float|int):
         self.length = length
         self.width = width
 
