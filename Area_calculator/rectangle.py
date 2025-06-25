@@ -9,14 +9,14 @@ class Rectangle(Shape):
         self.height = height
         self.width = width
 
-    def getArea(self):
+    def get_area(self):
         return self.width * self.height
 
     def get_perimeter(self):
         return (self.width + self.height) *2
 
     def __str__(self):
-        return f"length: {self.height}, width: {self.width}, area: {self.getArea()}"
+        return f"length: {self.height}, width: {self.width}, area: {self.get_area()}"
 
 
 
