@@ -8,10 +8,10 @@ def main_menu() -> str:
     print("4. combine 2 shapes")
     print("5. exit")
     choice = input("your choice - ")
-    if choice.isdigit() and "0" < choice > "5":
+    if choice.isdigit() :
         return choice
     else:
-        print("invalid choice")
+        print("invalid choice first")
 
 
 
@@ -23,8 +23,8 @@ def add_shape() -> str:
     print("3. Triangle")
     print("4. Circle")
     print("5. Hexagon")
-    choice = input("enter nuber between 1-5")
-    if choice.isdigit() and "0" < choice > "5":
+    choice = input("enter nuber between 1-5 - ")
+    if choice.isdigit() :
         return choice
     else:
         print("invalid choice")
