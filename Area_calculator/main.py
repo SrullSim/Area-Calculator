@@ -46,7 +46,7 @@ def managing():
             first, sec = int(first), int(sec)
             if first <= len(shapes) >= sec:
                 first, sec = shapes[first], shapes[sec]
-                both = father.__add__(first, sec)
+                both = father.__add__(first )
 
 
 

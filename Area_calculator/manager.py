@@ -1,7 +1,5 @@
-from menu import (add_shape,add_rectangle,add_circle,
-                  add_hexagon,add_square,add_triangle,
-                  detail_of_shape,combine_shapes)
-from base import Shape
+from menu import (add_rectangle,add_circle,add_hexagon,add_square,add_triangle)
+# from base import Shape
 from rectangle import Rectangle
 from square import Squere
 from triangle import Triangle
