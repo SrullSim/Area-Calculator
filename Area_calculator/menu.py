@@ -5,13 +5,14 @@ def main_menu() -> str:
     print("1. add shape")
     print("2. see all shapes")
     print("3. detail of shape")
-    print("4. combine 2 shapes")
-    print("5. exit")
+    print("4. get area of shape")
+    print("5. combine 2 shapes")
+    print("6. exit")
     choice = input("your choice - ")
-    if choice.isdigit() and "0" < choice > "5":
+    if choice.isdigit() :
         return choice
     else:
-        print("invalid choice")
+        print("invalid choice ")
 
 
 
@@ -23,8 +24,8 @@ def add_shape() -> str:
     print("3. Triangle")
     print("4. Circle")
     print("5. Hexagon")
-    choice = input("enter nuber between 1-5")
-    if choice.isdigit() and "0" < choice > "5":
+    choice = input("enter nuber between 1-5 - ")
+    if choice.isdigit() :
         return choice
     else:
         print("invalid choice")
@@ -62,7 +63,7 @@ def add_triangle() -> tuple[str,str]:
 def add_circle() -> str:
     """add circle"""
     radius = input("enter radius - ")
-    if radius.isdigit() and radius > "0":
+    if radius.isdigit():
         return radius
     else:
         print("invalid choice")
@@ -75,7 +76,7 @@ def add_hexagon() -> str :
     else:
         print("invalid choice")
 
-def detail_of_shape() -> str:
+def get_index() -> str:
     """get index of shape to display"""
     index = input("enter the index of the shape you want")
     if index.isdigit():

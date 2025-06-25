@@ -13,6 +13,6 @@ class Triangle(Rectangle):
         return super().get_perimeter() / 2
 
     def __str__(self):
-        return f"base: {self.width}, high: {self.height} "
+        return f"triangle size - base: {self.width}, high: {self.height} "
 
 

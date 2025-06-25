@@ -16,7 +16,7 @@ class Rectangle(Shape):
         return (self.width + self.height) *2
 
     def __str__(self):
-        return f"length: {self.height}, width: {self.width}, area: {self.get_area()}"
+        return f"rectangle size - length: {self.height}, width: {self.width}, area: {self.get_area()}"
 
 
 

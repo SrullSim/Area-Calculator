@@ -6,5 +6,5 @@ class Squere(Rectangle):
         super().__init__(side, side)
 
     def __str__(self):
-        return f"Square(side={self.width})"
+        return f"Square size - each side = {self.width}"
 
