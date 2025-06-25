@@ -12,7 +12,7 @@ def main_menu() -> str:
     if choice.isdigit() :
         return choice
     else:
-        print("invalid choice first")
+        print("invalid choice ")
 
 
 
