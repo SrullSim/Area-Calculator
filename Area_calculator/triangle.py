@@ -6,11 +6,11 @@ class Triangle(Rectangle):
     def __init__(self, height: float | int, base: float | int):
         super().__init__(height, base)
 
-    def getArea(self):
-        return 0.5 *  super().getArea()
+    def get_area(self):
+        return super().get_area() / 2
 
     def get_perimeter(self):
-        return 3 * self.width
+        return super().get_perimeter() / 2
 
     def __str__(self):
         return f"base: {self.width}, high: {self.height} "
