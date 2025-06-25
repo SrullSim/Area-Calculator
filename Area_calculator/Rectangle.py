@@ -13,12 +13,14 @@ class Rectangle(Shape):
         return self.width * self._length
 
     def __str__(self):
-        return f"length: {self._length}, width: {self.width}"
+        return f"length: {self._length}, width: {self.width}, area: {self.getArea()}"
 
     @property
-    def length(self):
-        return self.length
+    def _length(self):
+        return self._length
 
-    @length.setter
+    @_length.setter
     def set_lengh(self, length):
         self._length = length
+
+
