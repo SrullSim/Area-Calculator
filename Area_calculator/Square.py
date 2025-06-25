@@ -10,6 +10,6 @@ class Squere(Shape):
         return self.width * self.length
 
     def __str__(self):
-        return f"length: {self.length}, width: {self.width}"
+        return f"length: {self.length}, width: {self.width}, area: {self.getArea()}"
 
 
