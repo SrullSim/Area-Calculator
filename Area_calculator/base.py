@@ -14,7 +14,6 @@ class Shape(ABC):
         pass
 
     def __add__(self, other):
-        if type(other) != Shape:
-            raise ValueError
+
         return self.get_area() + other.get_area()
 
