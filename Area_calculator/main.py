@@ -1,7 +1,7 @@
 import menu
 import manager
 from Area_calculator.manager import factory_of_shapes, display_shapes
-from Area_calculator.menu import main_menu, add_shape, detail_of_shape, combine_shapes
+from Area_calculator.menu import main_menu, add_shape, get_index, combine_shapes
 from base import Shape
 from rectangle import Rectangle
 from square import Squere
@@ -12,8 +12,9 @@ from hexagon import Hexagon
 print("1. add shape")
 print("2. see all shapes")
 print("3. detail of shape")
-print("4. combine 2 shapes")
-print("5. exit")
+
+print("5. combine 2 shapes")
+print("6. exit")
 
 def managing():
     """ managing the process """
@@ -40,10 +41,16 @@ def managing():
 
             # option 3 - display one shape
             elif first_choice == "3":
-                index = int(detail_of_shape())
+                index = int(get_index())
                 print(shapes[index].__str__())
 
+            # option 4 - display area of shape
             elif first_choice == "4":
+                index = int(get_index())
+                print(shapes[index].get_area())
+
+            # option 5 - combine two shapes
+            elif first_choice == "5":
                 first, sec = combine_shapes()
                 first, sec = int(first), int(sec)
                 if first <= len(shapes) >= sec:
@@ -53,7 +60,8 @@ def managing():
                 else:
                     raise IndexError
 
-            elif first_choice == "5":
+            # exit from program
+            elif first_choice == "6":
                 print("hope you find what you look for")
                 run = False
 

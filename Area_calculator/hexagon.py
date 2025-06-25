@@ -15,4 +15,4 @@ class Hexagon(Shape):
         return self.side * 6
 
     def __str__(self):
-        return f"each side in the hexagon is {self.side} "
+        return f"each side in the hexagon is - {self.side} "
